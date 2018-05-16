@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>keyframeEffects</title>
+    <style>
+        #toAnimate {
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            background-color: #229999;
+        }
+    </style>
+    <script src="../polyfill/web-animations-next-lite.min.js"></script>
+</head>
+<body>
+<div id="toAnimate">
+    I'm a div
+</div>
+</body>
+</html>
+
+<script>
+    var elem = document.getElementById('toAnimate');
+    var timings = {
+        duration: 1000,
+        fill: 'both',
+        iterations: Infinity,
+    }
+    var keyframes = [
+        { transform: 'scale(1)', opacity: 1, },
+        { transform: 'scale(.5)', opacity: .5, },
+        { transform: 'scale(.667)', opacity: .667,  },
+        { transform: 'scale(.6)', opacity: .6,  }
+    ];
+    var effect = new KeyframeEffect(elem, keyframes, timings);
+    console.log(effect);
+    document.timeline.play(effect);
+</script>

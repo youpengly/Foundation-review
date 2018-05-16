@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Finish Callback</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            background: #224263;
+            font-family: Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container {
+            z-index: 1;
+        }
+
+        #countdown {
+            font-size: 10rem;
+            color: #fafafb;
+            font-weight: 600;
+        }
+
+        .curtain {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            width: 50%;
+            transition: -webkit-transform .35s ease-out;
+            transition: transform .35s ease-out;
+            transition: transform .35s ease-out, -webkit-transform .35s ease-out;
+            z-index: 0;
+            text-align: center;
+            color: #fafafb;
+            line-height: 1.4;
+        }
+        .curtain.left {
+            left: 0;
+            -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+            background-color: #299;
+        }
+        .curtain.right {
+            right: 0;
+            -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+            background-color: #226342;
+        }
+        .curtain.closed {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+        .curtain h2 {
+            width: 60%;
+            display: inline-block;
+            font-weight: 600;
+            margin-top: 2em;
+        }
+        .curtain p {
+            width: 60%;
+            display: inline-block;
+            margin-top: 2em;
+        }
+        .curtain span {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <p id="countdown">10</p>
+</div>
+
+
+<div id="curtain-left" class="curtain left">
+    <h2>countdownAnimation.currentTime<span>(increasing playbackRate)</span></h2>
+    <p>Immediately before finish() call<span id="countdown-time"></span></p>
+    <p>When countdownAnimation finished<span id="countdown-time2"></span></p>
+</div>
+<div id="curtain-right" class="curtain right">
+    <h2>containerAnimation.currentTime <span>(normal playbackRate)</span></h2>
+    <p>When countdownAnimation finished<span id="container-time"></span></p>
+    <p>When containerAnimation finished<span id="container-time2"></span></p>
+</div>
+</body>
+</html>
+
+<script>
+    /*
+     #container will shrink for as many seconds as is specified in the #countdown element text.
+
+     #countdown will pulse via scale and opacity for a unusually long time (500 seconds)
+
+     A setInterval changes the countdown value (in addition to increasing the animation’s playbackRate by 15%) every 1000 milliseconds. Once the timer reaches zero it will finish the #countdown animation.
+
+     Stats about the currentTime will be shown at the end.
+
+     What to expect:
+     If the timer is set to 1 then currentTime values before #countdown’s animation finishes will match (because playbackRate was not increased).
+     Any higher starting number will result in a #countdown animation currentTime being higher than the container
+     */
+    var clock = document.getElementById('countdown');
+    var container = document.getElementById('container');
+    var curtains = document.querySelectorAll('.curtain');
+    var time = parseInt(clock.textContent, 10);
+    var containerTimeBefore = document.getElementById('container-time');
+    var containerTimeAfter = document.getElementById('container-time2');
+    var countdownTimeBefore = document.getElementById('countdown-time');
+    var countdownTimeAfter = document.getElementById('countdown-time2');
+
+    var countdownAnimation = clock.animate([{ opacity: 1, transform: 'scale(.6)' }, { opacity: .5, transform: 'scale(1)' }], {
+        duration: 500,
+        easing: 'linear',
+        delay: 0,
+        iterations: 1000, //Infinity,
+        direction: 'alternate',
+        fill: 'forwards'
+    });
+    var containerAnimation = container.animate([{ transform: 'scale(1)' }, { transform: 'scale(.2)' }], {
+        duration: time * 1000,
+        easing: 'linear',
+        delay: 0,
+        iterations: 1
+        //fill: 'forwards'
+    });
+
+    countdownAnimation.onfinish = function () {
+        clearInterval(interval);
+        curtains[0].classList.add('closed');
+        curtains[1].classList.add('closed');
+        var wrapup = clock.animate([{ opacity: 0, transform: 'scale(.01) rotate(-10deg)', offset: 0 }, { opacity: 1, transform: 'scale(1.2) rotate(7deg)', offset: .8 }, { opacity: 1, transform: 'scale(1) rotate(0deg)', offset: 1 }], {
+            duration: 1000,
+            easing: 'ease-in-out',
+            delay: 0,
+            iterations: 1,
+            fill: 'forwards'
+        });
+        wrapup.playbackRate = .6;
+        clock.textContent = '0';
+
+        countdownTimeAfter.textContent = countdownAnimation.currentTime;
+    };
+    containerAnimation.onfinish = function () {
+        containerTimeAfter.textContent = containerAnimation.currentTime;
+    };
+
+    var interval = setInterval(function () {
+        time = time - 1;
+        clock.textContent = time;
+        if (time > 0) {
+            countdownAnimation.playbackRate = Math.min(countdownAnimation.playbackRate * 1.15, 6);
+        } else {
+            containerTimeBefore.textContent = containerAnimation.currentTime;
+            countdownTimeBefore.textContent = countdownAnimation.currentTime;
+            countdownAnimation.finish();
+        }
+    }, 1000);
+</script>

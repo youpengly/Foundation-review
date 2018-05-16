@@ -2,9 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e2ea33e-8689-4c72-9de6-f7e7e8c19190" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learning-webgl/webgl01/005-creating-3d-objects.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learning-webgl/webgl01/006-using-textures.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learning-webgl/webgl01/007-ligthing_in_webgl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web_animations_demo/01-basic/01-a_basic_animation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web_animations_demo/02-animation_and_controls/demo01_playStates.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web_animations_demo/02-animation_and_controls/demo02_finish_callback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web_animations_demo/02-animation_and_controls/demo03_sync_currentTime.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web_animations_demo/02-animation_and_controls/demo04_reverse.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web_animations_demo/03-multiple_animations/demo01_multiple_animations_per_ele.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web_animations_demo/03-multiple_animations/demo02_getAnimations.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web_animations_demo/04-Effects_and_Groups/demo01_keyframeEffects.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web_animations_demo/04-Effects_and_Groups/demo02_groupEffects.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web_animations_demo/04-Effects_and_Groups/demo03_sequenceEffects.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web_animations_demo/04-Effects_and_Groups/demo04_alternate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web_animations_demo/05-motion_paths/demo01-current_direction.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web_animations_demo/05-motion_paths/demo02-motion_offset.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web_animations_demo/05-motion_paths/demo03-motion_rotation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web_animations_demo/05-motion_paths/demo04-rainbow_preloader.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web_animations_demo/polyfill/normalize.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web_animations_demo/polyfill/web-animations-next-2.2.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web_animations_demo/reference.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learning-webgl/webgl01/008-animating-texture.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Foundation-review.iws" />
@@ -28,23 +44,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="007-ligthing_in_webgl.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/learning-webgl/webgl01/007-ligthing_in_webgl.html">
+      <file leaf-file-name="demo04-rainbow_preloader.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Web_animations_demo/05-motion_paths/demo04-rainbow_preloader.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2160">
-              <caret line="74" column="72" selection-start-line="74" selection-start-column="62" selection-end-line="74" selection-end-column="72" />
+            <state relative-caret-position="270">
+              <caret line="97" column="39" selection-start-line="97" selection-start-column="39" selection-end-line="97" selection-end-column="39" />
               <folding>
-                <element signature="n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#289#293#0" expanded="true" />
-                <element signature="e#299#303#0" expanded="true" />
-                <element signature="e#4360#10236#0" expanded="false" />
-                <element signature="e#10380#10898#0" expanded="false" />
-                <element signature="e#11093#15526#0" expanded="false" />
-                <element signature="e#11387#12264#0" expanded="false" />
-                <element signature="e#12703#13389#0" expanded="false" />
-                <element signature="e#14395#15233#0" expanded="false" />
-                <element signature="e#15669#16308#0" expanded="false" />
-                <element signature="e#16470#18816#0" expanded="false" />
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -57,6 +63,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -79,6 +86,27 @@
         <option value="$PROJECT_DIR$/learning-webgl/webgl01/005-creating-3d-objects.html" />
         <option value="$PROJECT_DIR$/learning-webgl/webgl01/006-Using-textures.html" />
         <option value="$PROJECT_DIR$/learning-webgl/webgl01/007-ligthing_in_webgl.html" />
+        <option value="$PROJECT_DIR$/learning-webgl/webgl01/008-animating-texture.html" />
+        <option value="$PROJECT_DIR$/Web_animations_demo/01-a_basic_animation/01-a_basic_animation.html" />
+        <option value="$PROJECT_DIR$/Web_animations_demo/01-a_basic_animation.html" />
+        <option value="$PROJECT_DIR$/Web_animations_demo/02-animation_and_controls/demo01_playStates.html" />
+        <option value="$PROJECT_DIR$/Web_animations_demo/02-animation_and_controls/demo02_finish_callback.html" />
+        <option value="$PROJECT_DIR$/Web_animations_demo/02-animation_and_controls/demo03_sync_currentTime.html" />
+        <option value="$PROJECT_DIR$/Web_animations_demo/02-animation_and_controls/demo04_reverse.html" />
+        <option value="$PROJECT_DIR$/Web_animations_demo/03-multiple_animations/demo01_multiple_animations_per_ele.html" />
+        <option value="$PROJECT_DIR$/Web_animations_demo/03-multiple_animations/web-animations-next-lite.min.js" />
+        <option value="$PROJECT_DIR$/Web_animations_demo/03-multiple_animations/demo02_getAnimations.html" />
+        <option value="$PROJECT_DIR$/Web_animations_demo/04-Effects_and_Groups/demo01_keyframeEffects.html" />
+        <option value="$PROJECT_DIR$/Web_animations_demo/reference.md" />
+        <option value="$PROJECT_DIR$/Web_animations_demo/polyfill/000.js" />
+        <option value="$PROJECT_DIR$/Web_animations_demo/04-Effects_and_Groups/demo02_groupEffects.html" />
+        <option value="$PROJECT_DIR$/Web_animations_demo/04-Effects_and_Groups/demo03_sequenceEffects.html" />
+        <option value="$PROJECT_DIR$/Web_animations_demo/04-Effects_and_Groups/demo04_alternate.html" />
+        <option value="$PROJECT_DIR$/Web_animations_demo/05-motion_paths/demo01-current_direction.html" />
+        <option value="$PROJECT_DIR$/Web_animations_demo/05-motion_paths/demo02-motion_offset.html" />
+        <option value="$PROJECT_DIR$/Web_animations_demo/05-motion_paths/demo03-motion_rotation.html" />
+        <option value="$PROJECT_DIR$/Web_animations_demo/05-motion_paths/demo04-rainbow_preloader.html" />
+        <option value="$PROJECT_DIR$/Web_animations_demo/polyfill/normalize.min.css" />
       </list>
     </option>
   </component>
@@ -89,10 +117,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="780" />
-    <option name="y" value="22" />
-    <option name="width" value="1524" />
-    <option name="height" value="1407" />
+    <option name="x" value="14" />
+    <option name="y" value="112" />
+    <option name="width" value="1691" />
+    <option name="height" value="1265" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -101,7 +129,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -139,7 +167,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="learning-webgl" />
+              <option name="myItemId" value="Web_animations_demo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -153,11 +181,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="learning-webgl" />
+              <option name="myItemId" value="Web_animations_demo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webgl01" />
+              <option name="myItemId" value="polyfill" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Foundation-review" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Foundation-review" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web_animations_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01-basic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Foundation-review" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Foundation-review" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -176,8 +232,12 @@
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\github\Foundation-review\Web_animations_demo\01-basic" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\github\Foundation-review\learning-webgl\webgl01" />
     </key>
@@ -254,24 +314,25 @@
       <workItem from="1525654116566" duration="11683000" />
       <workItem from="1526260523836" duration="606000" />
       <workItem from="1526275164434" duration="603000" />
-      <workItem from="1526366466731" duration="8975000" />
+      <workItem from="1526366466731" duration="10860000" />
+      <workItem from="1526451254537" duration="9815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28240000" />
+    <option name="totallyTimeSpent" value="39940000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="780" y="22" width="1524" height="1407" extended-state="0" />
+    <frame x="14" y="112" width="1691" height="1265" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19448183" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19600727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -301,6 +362,27 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/learning-webgl/webgl01/008-animating-texture.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#290#294#0" expanded="true" />
+            <element signature="e#300#304#0" expanded="true" />
+            <element signature="e#494#1255#0" expanded="false" />
+            <element signature="e#6877#12753#0" expanded="false" />
+            <element signature="e#12897#13415#0" expanded="false" />
+            <element signature="e#13610#18043#0" expanded="false" />
+            <element signature="e#13904#14781#0" expanded="false" />
+            <element signature="e#15220#15906#0" expanded="false" />
+            <element signature="e#16912#17750#0" expanded="false" />
+            <element signature="e#18186#18825#0" expanded="false" />
+            <element signature="e#18987#21333#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/learning-webgl/webgl01/001-introduction.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -479,8 +561,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learning-webgl/webgl01/007-ligthing_in_webgl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="74" column="72" selection-start-line="74" selection-start-column="62" selection-end-line="74" selection-end-column="72" />
+        <state relative-caret-position="150">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
           <folding>
             <element signature="n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="e#289#293#0" expanded="true" />
@@ -493,6 +575,219 @@
             <element signature="e#14395#15233#0" expanded="false" />
             <element signature="e#15669#16308#0" expanded="false" />
             <element signature="e#16470#18816#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_animations_demo/01-a_basic_animation/01-a_basic_animation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_animations_demo/02-animation_and_controls/demo01_playStates.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1192">
+          <caret line="280" column="9" selection-start-line="280" selection-start-column="9" selection-end-line="280" selection-end-column="9" />
+          <folding>
+            <element signature="n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#3028#3035#0" expanded="true" />
+            <element signature="e#3035#3042#0" expanded="true" />
+            <element signature="e#3243#3250#0" expanded="true" />
+            <element signature="e#3250#3257#0" expanded="true" />
+            <element signature="e#3467#3474#0" expanded="true" />
+            <element signature="e#3474#3481#0" expanded="true" />
+            <element signature="e#3693#3700#0" expanded="true" />
+            <element signature="e#3700#3707#0" expanded="true" />
+            <element signature="e#3917#3924#0" expanded="true" />
+            <element signature="e#3924#3931#0" expanded="true" />
+            <element signature="e#4143#4150#0" expanded="true" />
+            <element signature="e#4150#4157#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_animations_demo/02-animation_and_controls/demo04_reverse.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_animations_demo/02-animation_and_controls/demo03_sync_currentTime.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="85" column="7" selection-start-line="85" selection-start-column="7" selection-end-line="85" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_animations_demo/02-animation_and_controls/demo02_finish_callback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="116" column="47" selection-start-line="116" selection-start-column="47" selection-end-line="116" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learning-webgl/webgl01/008-animating-texture.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="177" column="0" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
+          <folding>
+            <element signature="n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#290#294#0" expanded="true" />
+            <element signature="e#300#304#0" expanded="true" />
+            <element signature="e#494#1255#0" expanded="false" />
+            <element signature="e#6877#12753#0" expanded="false" />
+            <element signature="e#12897#13415#0" expanded="false" />
+            <element signature="e#13610#18043#0" expanded="false" />
+            <element signature="e#13904#14781#0" expanded="false" />
+            <element signature="e#15220#15906#0" expanded="false" />
+            <element signature="e#16912#17750#0" expanded="false" />
+            <element signature="e#18186#18825#0" expanded="false" />
+            <element signature="e#18987#21333#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_animations_demo/03-multiple_animations/web-animations-next-lite.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_animations_demo/03-multiple_animations/demo02_getAnimations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="80" column="10" selection-start-line="80" selection-start-column="10" selection-end-line="80" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_animations_demo/03-multiple_animations/demo01_multiple_animations_per_ele.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_animations_demo/01-basic/01-a_basic_animation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="174" column="58" selection-start-line="174" selection-start-column="58" selection-end-line="174" selection-end-column="58" />
+          <folding>
+            <element signature="e#670#1583#0" expanded="false" />
+            <element signature="e#1593#2498#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_animations_demo/polyfill/web-animations-next-2.2.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="3" column="86" selection-start-line="3" selection-start-column="86" selection-end-line="3" selection-end-column="86" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_animations_demo/04-Effects_and_Groups/demo02_groupEffects.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_animations_demo/04-Effects_and_Groups/demo01_keyframeEffects.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="742">
+          <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_animations_demo/04-Effects_and_Groups/demo04_alternate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="54" column="69" selection-start-line="54" selection-start-column="69" selection-end-line="54" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_animations_demo/04-Effects_and_Groups/demo03_sequenceEffects.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1980">
+          <caret line="109" column="37" selection-start-line="109" selection-start-column="37" selection-end-line="109" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#1585#1977#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_animations_demo/05-motion_paths/demo03-motion_rotation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1628">
+          <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_animations_demo/05-motion_paths/demo02-motion_offset.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="652">
+          <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#11263#12467#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_animations_demo/reference.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="44" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_animations_demo/05-motion_paths/demo01-current_direction.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5768">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_animations_demo/polyfill/normalize.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5670">
+          <caret line="189" column="45" selection-start-line="189" selection-start-column="45" selection-end-line="189" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_animations_demo/05-motion_paths/demo04-rainbow_preloader.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="97" column="39" selection-start-line="97" selection-start-column="39" selection-end-line="97" selection-end-column="39" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

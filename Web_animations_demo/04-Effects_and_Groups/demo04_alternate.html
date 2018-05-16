@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alternate</title>
+    <style>
+        #toAnimate {
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            background-color: #229999;
+        }
+    </style>
+    <script src="../polyfill/web-animations-next-2.2.1.min.js"></script>
+</head>
+<body>
+<div id="toAnimate">
+    I'm a div
+</div>
+</body>
+</html>
+<!--
+<script>
+    // animating immediately
+    var elem = document.getElementById('toAnimate');
+    var timings = {
+        duration: 1000,
+        fill: 'both',
+        iterations: Infinity,
+    }
+    var keyframes = [
+        { transform: 'scale(1)', opacity: 1, },
+        { transform: 'scale(.5)', opacity: .5, },
+        { transform: 'scale(.667)', opacity: .667,  },
+        { transform: 'scale(.6)', opacity: .6,  }
+    ];
+
+    elem.animate(keyframes, timings);
+</script>-->
+<script>
+    var elem = document.getElementById('toAnimate');
+    var timings = {
+        duration: 1000,
+        fill: 'both',
+        iterations: Infinity,
+    };
+    var keyframes = [
+        { transform: 'scale(1)', opacity: 1, },
+        { transform: 'scale(.5)', opacity: .5, },
+        { transform: 'scale(.667)', opacity: .667,  },
+        { transform: 'scale(.6)', opacity: .6,  }
+    ];
+    var kEffect = new KeyframeEffect(elem, keyframes, timings);
+    var player = new Animation(kEffect, elem.ownerDocument.timeline);
+    player.play();
+</script>

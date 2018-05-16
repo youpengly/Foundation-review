@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Current Direction</title>
+    <style>
+        #count, .dot {
+            offset-path: path("M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z");
+            position: absolute;
+        }
+
+        #count {
+            -webkit-animation: pathy 3200ms infinite linear;
+            animation: pathy 3200ms infinite linear;
+            offset-distance: 0;
+            color: #f5f5fb;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .dot {
+            display: inline-block;
+            width: .4rem;
+            height: .4rem;
+            background: #f5f5fb;
+            border-radius: 50%;
+            opacity: 0;
+            -webkit-animation: pulse 3200ms infinite ease-in-out;
+            animation: pulse 3200ms infinite ease-in-out;
+        }
+        .dot:nth-of-type(1) {
+            offset-distance: 10%;
+            -webkit-animation-delay: 320ms;
+            animation-delay: 320ms;
+        }
+        .dot:nth-of-type(2) {
+            offset-distance: 20%;
+            -webkit-animation-delay: 640ms;
+            animation-delay: 640ms;
+        }
+        .dot:nth-of-type(3) {
+            offset-distance: 30%;
+            -webkit-animation-delay: 960ms;
+            animation-delay: 960ms;
+        }
+        .dot:nth-of-type(4) {
+            offset-distance: 40%;
+            -webkit-animation-delay: 1280ms;
+            animation-delay: 1280ms;
+        }
+        .dot:nth-of-type(5) {
+            offset-distance: 50%;
+            -webkit-animation-delay: 1600ms;
+            animation-delay: 1600ms;
+        }
+        .dot:nth-of-type(6) {
+            offset-distance: 60%;
+            -webkit-animation-delay: 1920ms;
+            animation-delay: 1920ms;
+        }
+        .dot:nth-of-type(7) {
+            offset-distance: 70%;
+            -webkit-animation-delay: 2240ms;
+            animation-delay: 2240ms;
+        }
+        .dot:nth-of-type(8) {
+            offset-distance: 80%;
+            -webkit-animation-delay: 2560ms;
+            animation-delay: 2560ms;
+        }
+        .dot:nth-of-type(9) {
+            offset-distance: 90%;
+            -webkit-animation-delay: 2880ms;
+            animation-delay: 2880ms;
+        }
+        .dot:nth-of-type(10) {
+            offset-distance: 0%;
+            -webkit-animation-delay: 0ms;
+            animation-delay: 0ms;
+        }
+        .dot:nth-of-type(11) {
+            offset-distance: 5%;
+            -webkit-animation-delay: 160ms;
+            animation-delay: 160ms;
+        }
+        .dot:nth-of-type(12) {
+            offset-distance: 15%;
+            -webkit-animation-delay: 480ms;
+            animation-delay: 480ms;
+        }
+        .dot:nth-of-type(13) {
+            offset-distance: 25%;
+            -webkit-animation-delay: 800ms;
+            animation-delay: 800ms;
+        }
+        .dot:nth-of-type(14) {
+            offset-distance: 35%;
+            -webkit-animation-delay: 1120ms;
+            animation-delay: 1120ms;
+        }
+        .dot:nth-of-type(15) {
+            offset-distance: 45%;
+            -webkit-animation-delay: 1440ms;
+            animation-delay: 1440ms;
+        }
+        .dot:nth-of-type(16) {
+            offset-distance: 55%;
+            -webkit-animation-delay: 1760ms;
+            animation-delay: 1760ms;
+        }
+        .dot:nth-of-type(17) {
+            offset-distance: 65%;
+            -webkit-animation-delay: 2080ms;
+            animation-delay: 2080ms;
+        }
+        .dot:nth-of-type(18) {
+            offset-distance: 75%;
+            -webkit-animation-delay: 2400ms;
+            animation-delay: 2400ms;
+        }
+        .dot:nth-of-type(19) {
+            offset-distance: 85%;
+            -webkit-animation-delay: 2720ms;
+            animation-delay: 2720ms;
+        }
+        .dot:nth-of-type(20) {
+            offset-distance: 95%;
+            -webkit-animation-delay: 3040ms;
+            animation-delay: 3040ms;
+        }
+
+        @-webkit-keyframes pathy {
+            100% {
+                offset-distance: 100%;
+            }
+        }
+
+        @keyframes pathy {
+            100% {
+                offset-distance: 100%;
+            }
+        }
+        @-webkit-keyframes pulse {
+            20% {
+                opacity: 1;
+            }
+            40% {
+                opacity: 0;
+            }
+        }
+        @keyframes pulse {
+            20% {
+                opacity: 1;
+            }
+            40% {
+                opacity: 0;
+            }
+        }
+        .message {
+            display: none;
+        }
+        .no-motionpath .message {
+            display: block;
+            color: #f5f5fb;
+            padding: 1rem;
+        }
+
+        body {
+            background: #863334;
+            background: radial-gradient(circle, #a65354 0%, #863334 100%) center center no-repeat;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            height: 100vh;
+        }
+
+        #container {
+            position: absolute;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            width: 200px;
+            height: 100px;
+        }
+        .no-motionpath #container {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+<div id="container">
+    <p id="count">1</p>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+</div>
+<p class="message">Requires a browser that supports CSS Motion Path spec with the offset-* naming</p>
+</body>
+</html>
+
+<script>
+    var p = document.getElementById('count');
+    if (p.style.offsetPath !== undefined) {
+        var counter = 2;
+        p.addEventListener('animationiteration', function(e) {
+            p.textContent = (counter++);
+        });
+    } else {
+        document.documentElement.classList.add('no-motionpath');
+    }
+</script>

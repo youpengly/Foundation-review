@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Group Effects</title>
+    <style>
+        body {
+            background: #3d6644;
+            text-align: center;
+        }
+
+        [id^=m], [id^=t] {
+            margin-top: 1rem;
+            font-size: 2rem;
+            color: #f9f7fb;
+            display: inline-block;
+        }
+    </style>
+    <script src="../polyfill/web-animations-next-2.2.1.min.js"></script>
+</head>
+<body>
+<div id="m0">G</div>
+<div id="m1">R</div>
+<div id="m2">O</div>
+<div id="m3">U</div>
+<div id="m4">P</div>
+<div id="m5">A</div>
+<div>
+    <div id="t0">G</div>
+    <div id="t1">R</div>
+    <div id="t2">O</div>
+    <div id="t3">U</div>
+    <div id="t4">P</div>
+    <div id="t5">B</div>
+</div>
+</body>
+</html>
+
+<script>
+    var ms = Array.prototype.slice.call(document.querySelectorAll('[id^=m]'));
+    var ts = Array.prototype.slice.call(document.querySelectorAll('[id^=t]'));
+    var keyframeEffects = [];
+    var keyframeEffects2 = [];
+
+    var effects = {
+        scalers: [
+            { transform: 'scale(1)', offset: 0 },
+            { transform: 'scale(.5)', offset: .7 },
+            { transform: 'scale(1)', offset: 1 }
+        ],
+        translations: [
+            { transform: 'translateY(0)', offset: 0 },
+            { transform: 'translateY(.5rem)', offset: .7 },
+            { transform: 'translateY(0)', offset: 1 }
+        ],
+    }
+    var timing = {
+        duration: 1000,
+        easing: 'ease-in',
+        fill: 'both',
+        iterations: Infinity
+    }
+
+    //Create a KeyframeEffect for each element (this will not kick off any animation)
+    ms.forEach(function(el, i, ra) {
+        var effect = new KeyframeEffect(el, effects.scalers, timing);
+        keyframeEffects.push(effect);
+    });
+    ts.forEach(function(el, i, ra) {
+        effect = new KeyframeEffect(el, effects.translations, timing);
+        keyframeEffects2.push(effect);
+    });
+
+    //add the six KeyframeEffects to a GroupEffect, and play it on the doucment timeline
+    var groupEffectA = new GroupEffect(keyframeEffects);
+    var anim = document.timeline.play(groupEffectA);
+
+    var groupEffectB = new GroupEffect(keyframeEffects2);
+    var anim2 = document.timeline.play(groupEffectB);
+</script>

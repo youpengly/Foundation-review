@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sync CurrentTime</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            color: #e56363;
+            background: #f8f9f9;
+            font-family: Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 8rem;
+            text-align: center;
+            padding: 1rem;
+            overflow-x: hidden;
+        }
+        @media all and (max-width: 440px) {
+            body {
+                font-size: 4rem;
+            }
+        }
+
+        p {
+            display: inline-block;
+        }
+
+        input {
+            display: block;
+            font-size: 1.5rem;
+            line-height: 1;
+            margin: 1rem auto;
+            padding: .7rem;
+            -webkit-appearance: none;
+            border: 0;
+            background: rgba(20, 160, 200, 0.8);
+            color: #fefeff;
+            border-radius: .5rem;
+            border: 2px solid transparent;
+        }
+        input:hover {
+            opacity: .75;
+        }
+        input:focus {
+            border-color: #444;
+            outline: 0;
+        }
+    </style>
+</head>
+<body>
+<p id="toAnimate"><span>A</span><i>P</i><b>I</b></p>
+<p id="toAnimate2"><span>A</span><i>P</i><b>I</b></p>
+<input type="button" value="Sync">
+</body>
+</html>
+<script>
+    var frames = [{ transform: 'scale(1) rotate(-2deg)', offset: 0, opacity: 1 }, { transform: 'scale(.3) rotate(5deg)', opacity: .2, offset: .333333 }, { transform: 'scale(.567) rotate(-3deg)', opacity: .567, offset: .666667 }, { transform: 'scale(.5) rotate(2deg)', opacity: .4, offset: 1 }];
+    var timings = {
+        duration: 700,
+        iterations: Infinity,
+        direction: 'alternate',
+        fill: 'forwards',
+        delay: 0,
+        easing: 'ease-in-out'
+    };
+    var player, player2;
+    player = document.getElementById('toAnimate').animate(frames, timings);
+
+    player2 = document.getElementById('toAnimate2').animate(frames, timings);
+    player2.currentTime = 500; //get out of sync
+
+    document.querySelector('input').addEventListener('click', function (e) {
+        var target = e.currentTarget;
+        if (target.classList.contains('synced')) {
+            player2.currentTime = player.currentTime - Math.random() * 700;
+            target.classList.remove('synced');
+            target.value = "Sync";
+        } else {
+            player2.currentTime = player.currentTime;
+            target.classList.add('synced');
+            target.value = "Randomize";
+        }
+    });
+</script>

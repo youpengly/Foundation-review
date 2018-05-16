@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reverse</title>
+    <style>
+        body {
+            background: #bd4823;
+        }
+
+        div {
+            background: #f3f3f9;
+            width: 50vw;
+            height: 2rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+<div id="normal">Normal</div>
+
+<div id="reverse">Reversed</div>
+</body>
+</html>
+<script>
+    var n = document.getElementById('normal');
+    var r = document.getElementById('reverse');
+    var keyframes = [{transform: 'translateX(0)'}, {transform: 'translateX(50vw)'}];
+    var timings = {
+        duration: 1000,
+        delay: 10,
+        iterations: 3,
+        direction: 'alternate',
+        easing: 'ease-in-out',
+        fill: 'both'
+    }
+    var p1 = n.animate(keyframes, timings);
+    var p2 = r.animate(keyframes, timings);
+    p2.reverse();
+    p1.ele = n;
+    p2.ele = r;
+    p1.onfinish = p2.onfinish = function () {
+        this.ele.textContent = this.ele.textContent + ', Current Time: ' + this.currentTime.toFixed(0);
+    }
+</script>

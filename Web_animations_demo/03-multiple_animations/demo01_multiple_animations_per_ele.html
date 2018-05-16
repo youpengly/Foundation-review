@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiple Animations per element</title>
+    <style>
+        body {
+            background: #e45349;
+            display: flex;
+            justify-content: center;
+        }
+
+        div {
+            width: 5vw;
+            height: 5vh;
+            background: #efefff;
+            border-radius: 1vh;
+        }
+    </style>
+</head>
+<body>
+<div id="a"></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</body>
+</html>
+<script>
+    var a = document.querySelectorAll('div');
+    a = Array.prototype.slice.call(a);
+    var timings = {easing: 'ease-in-out', iterations: Infinity, direction: 'alternate', fill: 'both'}
+    a.forEach(function (el, i, ra) {
+        timings.delay = i * 98;
+        timings.duration = 2500;
+        el.animate([{transform: 'translateY(0) scaleX(.8)'}, {transform: 'translateY(95vh) scaleX(1)'}], timings);
+        timings.duration = 2000;
+        el.animate([{opacity: 1}, {opacity: 0}], timings);
+        timings.duration = 3000;
+        el.animate([{backgroundColor: 'rgb(239, 239, 255)'}, {backgroundColor: '#e4c349'}], timings);
+    });
+</script>

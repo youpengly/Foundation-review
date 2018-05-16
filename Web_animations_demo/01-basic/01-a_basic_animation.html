@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A Basic Animation</title>
+    <style>
+        body {
+            background: #135569;
+        }
+
+        ul {
+            display: inline-block;
+            width: 6rem;
+        }
+
+        li {
+            background: #dedfee;
+            height: 4rem;
+            width: 4rem;
+            display: block;
+            margin: 2rem 0 2rem 2rem;
+            border-radius: 1rem;
+        }
+
+        .css.activated li {
+            background: #d05f5e;
+            -webkit-animation: translation 3s 0s infinite linear;
+            animation: translation 3s 0s infinite linear;
+        }
+
+        @-webkit-keyframes translation {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            8% {
+                -webkit-transform: rotate(-12deg);
+                transform: rotate(-12deg);
+            }
+            30% {
+                -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+            }
+            55% {
+                -webkit-transform: rotate(-40deg);
+                transform: rotate(-40deg);
+            }
+            80% {
+                -webkit-transform: rotate(70deg);
+                transform: rotate(70deg);
+            }
+            92% {
+                -webkit-transform: rotate(-13deg);
+                transform: rotate(-13deg);
+            }
+            100% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+        }
+
+        @keyframes translation {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            8% {
+                -webkit-transform: rotate(-12deg);
+                transform: rotate(-12deg);
+            }
+            30% {
+                -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+            }
+            55% {
+                -webkit-transform: rotate(-40deg);
+                transform: rotate(-40deg);
+            }
+            80% {
+                -webkit-transform: rotate(70deg);
+                transform: rotate(70deg);
+            }
+            92% {
+                -webkit-transform: rotate(-13deg);
+                transform: rotate(-13deg);
+            }
+            100% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+        }
+
+        a {
+            position: absolute;
+            bottom: 0;
+            padding: 1rem;
+            left: 0;
+            right: 0;
+            color: #fafbff;
+            background: #fafbff20;
+            font-family: system-ui, sans-serif;
+        }
+
+        @keyframes emphasis {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            30% {
+                transform: scale(.5);
+                opacity: .5;
+            }
+            78.75% {
+                transform: scale(.667);
+                opacity: .667;
+            }
+            100% {
+                transform: scale(.6);
+                opacity: .6;
+            }
+        }
+        #toAnimate {
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            background-color: #fafbff;
+            font-size: 20px;
+            text-align: center;
+
+            animation: emphasis 700ms ease-in-out 10ms infinite alternate forwards;
+        }
+    </style>
+</head>
+<body>
+
+<ul class="js">
+    <li></li>
+    <li></li>
+</ul>
+<ul class="css">
+    <li></li>
+    <li></li>
+</ul>
+<div id="toAnimate">
+    I'm a div.
+</div>
+<a href="https://danielcwilson.com/blog/2015/07/animations-part-1" target="_blank">
+    Learn about the Web Animations
+    API</a>
+</body>
+</html>
+<script>
+    var elements = document.querySelectorAll('.js li');
+    var animations = [];
+    for (var i = 0, len = elements.length; i < len; ++i) {
+        var animation = elements[i].animate([{transform: 'rotate(0deg)', offset: 0}, {
+            transform: 'rotate(-12deg)',
+            offset: .08
+        }, {transform: 'rotate(270deg)', offset: .3}, {
+            transform: 'rotate(-40deg)',
+            offset: .55
+        }, {transform: 'rotate(70deg)', offset: .8}, {
+            transform: 'rotate(-13deg)',
+            offset: .92
+        }, {transform: 'rotate(0deg)', offset: 1}
+        ], {duration: 3000, iterations: Infinity, easing: 'linear', delay: 0});
+        animations.push(animation);
+    }
+    document.querySelector('.css').classList.add('activated');
+
+    var player = document.getElementById('toAnimate').animate([
+        { transform: 'scale(1)', opacity: 1, offset: 0 },
+        { transform: 'scale(.5)', opacity: .5, offset: .3 },
+        { transform: 'scale(.667)', opacity: .667, offset: .7875 },
+        { transform: 'scale(.6)', opacity: .6, offset: 1 }
+    ], {
+        duration: 700, //milliseconds
+        easing: 'ease-in-out', //'linear', a bezier curve, etc.
+        delay: 10, //milliseconds
+        iterations: Infinity, //or a number
+        direction: 'alternate', //'normal', 'reverse', etc.
+        fill: 'forwards' //'backwards', 'both', 'none', 'auto'
+    });
+</script>
